@@ -8,6 +8,7 @@ export const apiGetAll = () => {
 
    fetch(url)
    .then(response => {
+     console.log(response.json());
      return response.json();
    })
    .then(json => {

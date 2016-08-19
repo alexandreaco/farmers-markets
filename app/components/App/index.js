@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
+
+import { getAll } from '../../actions';
 
 class App extends Component {
 
@@ -21,4 +23,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect()(App);

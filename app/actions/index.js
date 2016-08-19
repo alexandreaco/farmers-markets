@@ -1,9 +1,11 @@
 import { createAction } from 'redux-actions';
 
 import {
-
-} from '../utils/cuisineApi';
+  apiGetAll,
+} from '../utils/api';
 
 import {
-
+  GET_ALL,
 } from '../constants';
+
+export const getAll = createAction(GET_ALL, apiGetAll);

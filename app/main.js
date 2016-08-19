@@ -13,15 +13,23 @@ var css = require("./scss/main.scss");
 
 import App from './components/App';
 import Homepage from './components/Homepage';
-import LocationDetail from './components/LocationDetail';
+import Location from './components/Location';
 
 render(
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={Homepage}/>
+        <Route path='/l/:location' component={Location} />
       </Route>
     </Router>
   </Provider>,
   document.getElementById('app')
 )
+
+// render(
+//   <Provider store={store}>
+//     <App />
+//   </Provider>,
+//   document.getElementById('app')
+// )

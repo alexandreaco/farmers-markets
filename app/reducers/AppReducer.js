@@ -1,18 +1,18 @@
 import { handleActions } from 'redux-actions';
 
 import {
-
+  GET_ALL,
 } from '../constants';
 
 const initialState = {
-
+  locations: [],
 };
 
 export default handleActions({
 
-  // [GET_INGREDIENTS]: (state, action) => ({
-  //   ...state,
-  //   ingredients: action.payload,
-  // }),
+  [GET_ALL]: (state, action) => ({
+    ...state,
+    items: action.payload,
+  }),
 
 }, initialState);

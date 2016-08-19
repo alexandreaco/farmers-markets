@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { getAll } from '../../actions';
-
-class Homepage extends Component {
-
+class App extends Component {
   constructor() {
     super();
-  }
-
-  componentWillMount() {
-    this.props.dispatch(getAll);
   }
 
   render() {
     return (
       <div className="container">
-        <h1>Homepage</h1>
+        <h1>{this.props.params.location}</h1>
       </div>
     )
   }
 }
 
-export default connect()(Homepage);
+export default App;
