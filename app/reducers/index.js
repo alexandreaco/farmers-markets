@@ -1,17 +1,8 @@
-import { handleActions } from 'redux-actions';
-import {
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
+import app from './AppReducer';
 
-} from '../constants';
-
-const initialState = {
-
-};
-
-export default handleActions({
-
-  // [GET_INGREDIENTS]: (state, action) => ({
-  //   ...state,
-  //   ingredients: action.payload,
-  // }),
-
-}, initialState);
+export default combineReducers({
+  app,
+  routing: routerReducer
+})
