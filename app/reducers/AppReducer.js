@@ -12,7 +12,7 @@ export default handleActions({
 
   [GET_ALL]: (state, action) => ({
     ...state,
-    items: action.payload,
+    locations: action.payload,
   }),
 
 }, initialState);
