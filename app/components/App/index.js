@@ -13,6 +13,7 @@ class App extends Component {
       <div className="container">
         <nav>
           <Link to="/">Home</Link>
+          <Link to="/farms">Farms</Link>
         </nav>
 
         {this.props.children}
