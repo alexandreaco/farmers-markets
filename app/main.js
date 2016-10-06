@@ -9,7 +9,7 @@ import { syncHistoryWithStore } from 'react-router-redux'
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store)
 
-var css = require("./scss/main.scss");
+var css = require("./styles/main.css");
 
 import App from './components/App';
 import Homepage from './components/Homepage';

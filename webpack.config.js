@@ -1,4 +1,6 @@
-var path = require("path");
+var path         = require("path");
+var precss       = require('precss');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
@@ -17,9 +19,12 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
-      },
+        test:   /\.css$/,
+        loader: "style-loader!css-loader!postcss-loader"
+      }
     ]
+  },
+  postcss: function () {
+    return [precss, autoprefixer];
   }
 };
