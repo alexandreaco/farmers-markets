@@ -1,0 +1,13 @@
+@import '../../../styles/main.css';
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-family: var(--font--serif);
+  font-size: 64px;
+  color: var(--color--navy);
+}

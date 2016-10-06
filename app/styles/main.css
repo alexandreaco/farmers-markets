@@ -1,4 +1,17 @@
 /* Variables */
 
---font--serif: 'adobe-caslon-pro';
---font--sans: 'futura-pt';
+:root {
+  --font--serif: 'adobe-caslon-pro';
+  --font--sans: 'futura-pt';
+
+  --color--navy: #23303C;
+  --color--gray: #D1D4CE;
+  --color--background: #F7F7F7;
+
+  --max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
