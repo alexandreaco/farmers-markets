@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "node-sass": "^3.7.0",
+    "postcss-import": "^8.1.2",
     "postcss-loader": "^0.13.0",
     "postcss-modules": "^0.5.2",
     "precss": "^1.4.0",

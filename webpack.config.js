@@ -24,7 +24,9 @@ module.exports = {
       }
     ]
   },
-  postcss: function () {
-    return [precss, autoprefixer];
-  }
+  postcss: (webpack) => [
+    precss,
+    autoprefixer,
+    require("postcss-import")({ addDependencyTo: webpack }),
+  ]
 };
