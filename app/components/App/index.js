@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router'
 
 import Header from './Header';
+import Filter from './Filter';
 
 class App extends Component {
 
@@ -14,10 +15,7 @@ class App extends Component {
     return (
       <div className="container">
         <Header />
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/farms">Farms</Link>
-        </nav>
+        <Filter />
 
         {this.props.children}
       </div>
