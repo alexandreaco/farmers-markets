@@ -5,7 +5,7 @@ import { API_URL } from '../config';
 
 // API Routes
 export const GET_ALL_FARMS = '/api';
-export const GET_FARMS_BY_STATE = '/api/farms';
+export const GET_FARMS = '/api/farms';
 
 // API Caller
 export const callApi = (route, params) => {
