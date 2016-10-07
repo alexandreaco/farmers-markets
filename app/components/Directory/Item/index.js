@@ -9,10 +9,11 @@ export function Item(props){
     city,
     state,
     zip,
+    action,
     index
   } = props;
   return (
-    <div className={styles.item}>
+    <div className={styles.item} onClick={action}>
       <div className={styles.number}>{index}</div>
       <div className={styles.address}>
         <div>{name}</div>

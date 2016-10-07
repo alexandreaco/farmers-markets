@@ -1,0 +1,25 @@
+@import '../../../styles/main.css';
+
+.item {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.title {
+  color: var(--color--navy);
+  font-family: var(--font--serif);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+.address {
+  color: var(--color--navy);
+  font-family: var(--font--serif);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: var(--color--red);
+}

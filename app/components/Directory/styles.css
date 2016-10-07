@@ -2,10 +2,23 @@
 
 .background {
   background-color: var(--color--background);
-  padding: 90px 15px;
 }
 
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.list {
+  overflow: scroll;
+  padding: 45px 15px;
+  flex: 1;
+}
+
+.detail {
+  padding: 45px 15px;
+  flex: 1;
 }
