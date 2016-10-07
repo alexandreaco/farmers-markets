@@ -1,0 +1,13 @@
+@import '../../../styles/main.css';
+
+.empty {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  font-family: var(--font--serif);
+  font-size: 18px;
+  font-weight: 300;
+}

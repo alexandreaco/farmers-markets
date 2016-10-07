@@ -4,7 +4,9 @@ import { connect } from 'react-redux';
 import {
   getFarms
 } from '../../actions';
+
 import Item from './Item';
+import Empty from './Empty';
 
 import styles from './styles.css';
 
@@ -22,7 +24,7 @@ class Directory extends Component {
   }
 
   render() {
-    const { farms } = this.props;
+    const { farms, location } = this.props;
     return (
       <div className={styles.background}>
         <div className={styles.container}>
@@ -38,6 +40,9 @@ class Directory extends Component {
                 key={i}
               />
             ))
+          }
+          {
+            farms.length < 1 && <Empty location={location.state.filter || ''} />
           }
         </div>
       </div>
