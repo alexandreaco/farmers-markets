@@ -1,0 +1,11 @@
+@import '../../styles/main.css';
+
+.background {
+  background-color: var(--color--background--med);
+  padding: 90px 15px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}

@@ -6,7 +6,7 @@
 }
 
 .number {
-  color: var(--color-navy);
+  color: var(--color--navy);
   font-family: var(--font--serif);
   font-size: 32px;
   font-weight: 700;
@@ -15,7 +15,7 @@
 }
 
 .title {
-  color: var(--color-navy);
+  color: var(--color--navy);
   font-family: var(--font--serif);
   font-size: 32px;
   font-weight: 700;
@@ -23,7 +23,7 @@
 }
 
 .address {
-  color: var(--color-navy);
+  color: var(--color--navy);
   font-family: var(--font--serif);
   font-size: 24px;
   font-weight: 500;
