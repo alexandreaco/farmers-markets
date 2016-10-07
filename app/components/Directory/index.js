@@ -10,8 +10,15 @@ import styles from './styles.css';
 
 class Directory extends Component {
   componentWillMount() {
-    const { dispatch } = this.props;
-    dispatch(getFarms({state: 'New Mexico'}));
+    const { dispatch, location } = this.props;
+    dispatch(getFarms({ state: location.state.filter || '' }));
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const { dispatch, location } = this.props;
+    if (location !== nextProps.location) {
+      dispatch(getFarms({ state: nextProps.location.state.filter }));
+    }
   }
 
   render() {
