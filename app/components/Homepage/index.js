@@ -10,7 +10,6 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Homepage</h1>
       </div>
     )
   }

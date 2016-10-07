@@ -1,0 +1,10 @@
+@import '../../styles/main.css';
+
+.container {
+  border-top: 4px solid var(--color--moss);
+}
+
+.background {
+  background-color: #FFF;
+  padding: 40px 15px;
+}

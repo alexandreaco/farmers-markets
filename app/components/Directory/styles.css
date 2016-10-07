@@ -1,7 +1,7 @@
 @import '../../styles/main.css';
 
 .background {
-  background-color: var(--color--background--med);
+  background-color: var(--color--background);
   padding: 90px 15px;
 }
 

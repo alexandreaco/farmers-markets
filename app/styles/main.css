@@ -6,10 +6,12 @@
 
   --color--navy: #23303C;
   --color--gray: #D1D4CE;
+  --color--moss: #62A887;
+  --color--red: #BB5C4F;
   --color--background: #F7F7F7;
   --color--background--med: #F1F1F1;
 
-  --max-width: 1200px;
+  --max-width: 1000px;
 }
 
 a {
@@ -19,4 +21,5 @@ a {
 
 body {
   margin: 0;
+  background-color: var(--color--background);
 }

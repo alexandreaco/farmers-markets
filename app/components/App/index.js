@@ -5,6 +5,8 @@ import { Link } from 'react-router'
 import Header from './Header';
 import Filter from './Filter';
 
+import styles from './styles.css';
+
 class App extends Component {
 
   constructor() {
@@ -13,9 +15,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <Header />
-        <Filter />
+      <div className={styles.container}>
+        <div className={styles.background}>
+          <Header />
+          <Filter />
+        </div>
 
         {this.props.children}
       </div>
