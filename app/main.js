@@ -4,10 +4,8 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
-import { syncHistoryWithStore } from 'react-router-redux'
 
 const store = configureStore();
-const history = syncHistoryWithStore(browserHistory, store)
 
 var css = require("./styles/main.css");
 
@@ -17,7 +15,7 @@ import Directory from './components/Directory';
 
 render(
   <Provider store={store}>
-    <Router history={history}>
+    <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Homepage} />
         <Route path="/farms" component={Directory} />
